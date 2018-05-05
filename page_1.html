@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+  <title>Document</title>
+  <style>
+
+
+
+  .dropbtn {
+      background-color:	#80266E ;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+  }
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: 	#80266E;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px #C0C0C0;
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #800080}
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+      background-color: #800080;
+  }
+
+  .rowheight{
+    background-color: #000;
+    height:200px;
+
+    #back2Top {
+        width: 100px;
+        line-height: 100px;
+        overflow: hidden;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        -moz-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        position: fixed;
+        bottom: 100px;
+        right: 0;
+        background-color: #DDD;
+        color: #555;
+        text-align: center;
+        font-size: 80px;
+        text-decoration: none;
+    }
+    #back2Top:hover {
+        background-color: #DDF;
+        color: #000;
+    }
+  }
+
+  img {
+    width: 200px;
+    height: 400px;
+    object-fit: fill;
+}
+  </style>
+</head>
+
+
+<body background="purple.jpg" >
+
+  <nav class="navbar navbar-toggleable-md navbar-inverse"style="background-color:	#80266E" >
+    <font color="white"><h1><font face="Comic Sans MS">Purple</font></h1></font>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+
+        <div class="con">
+          <div class="row">
+            <div class="col">&nbsp</div>
+            <div class="col">&nbsp</div>
+            <div class="col">&nbsp</div>
+
+
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="page1.html"><button class="dropbtn">Home</button></a>
+
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Who We Are</button>
+          <div class="dropdown-content">
+            <a href="ourstory.html">Our Story</a>
+            <a href="founders.html">Founders</a>
+            <a href="team.html">Team</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">What We Do</button>
+          <div class="dropdown-content">
+            <a href="faq.html">FAQ's</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Get Involved</button>
+          <div class="dropdown-content">
+            <a href="donate.html">Donate</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Media</button>
+          <div class="dropdown-content">
+            <a href="articles.html">Articles</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="contact.html"><button class="dropbtn">Contact Us</button></a>
+        </div>
+
+
+      </div>
+    </nav>
+
+
+    <br>
+
+
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active"style="width:100%;height:400px;" >
+      <img src="arts1.jpg" alt="Norway" style="float:left;width:100%;height:100%;object-fit:fill;">
+    </div>
+    <div class="carousel-item" style="width:100%;height:400px;">
+  <img src="arts2.jpg" alt="Norway" style="float:left;width:100%;height:100%;object-fit:fill;">
+    </div>
+
+    <div class="carousel-item" style="width:100%;height:400px;">
+        <img src="arts4.jpg" alt="Norway" style="float:left;width:100%;height:100%;object-fit:fill;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+<br>
+
+<div class="container">
+      <font color="white">
+        <h2>Welcome to Purple </h2>
+    <h11> Art has been a part of our life for as long as humanity has existed. For thousands of years people have been creating, looking at, criticizing, and enjoying art. I would like to address three questions: what is art, what is its purpose, and why has it survived for this long.
+
+      The connection between what the artist means to achieve and what he achieves through the medium is what I believe classifies art. If what the artist meant to say is understood by at least one person in this world, when we can safely call that piece art. What classifies a masterpiece, however, is when not only one person understands what the artist was trying to say with the piece but when the majority does. Many people believe that the fine arts are elitist.
+</h11>
+</font>
+</div>
+<br>
+
+
+<div class="container">
+  <font color="white">
+  <h2>Featured Work </h2>
+  </font>
+  <div class="container">
+<div class="card-deck" style="width:100%;height:450px;">
+  <div class="card">
+    <img class="card-img-top" src="fea1.jpg" alt="Card image cap" style="width:100%;height:300px;">
+    <div class="card-body">
+      <h5 class="card-title">Lost Art</h5>
+      <p>Lost Art is a modern art that depicts the mystery of life.</p>
+      <button type="button" class="btn btn-primary" >Buy Now!</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="fea2.jpg" alt="Card image cap" style="width:100%;height:300px;">
+    <div class="card-body">
+      <h5 class="card-title">Guess Me</h5>
+      <p>Guess Me is a modern art that depicts the mystery of life.</p>
+      <button type="button" class="btn btn-primary" >Buy Now!</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="fea3.jpg" alt="Card image cap" style="width:100%;height:300px;">
+    <div class="card-body">
+      <h5 class="card-title">Illusions</h5>
+      <p>Illusions is a modern art that depicts the mystery of life.</p>
+      <button type="button" class="btn btn-primary" >Buy Now!</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+
+
+<div class="container">
+  <font color="white">
+  <h2>All Art Works </h2></font>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="all1.jpg" alt="Card image cap" style="width:100%;height:300px;">
+        <h5>Teen</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all2.jpg" alt="Card image cap" style="width:100%;height:300px;">
+          <h5>Beard Bored</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all3.jpg" alt="Card image cap" style="width:100%;height:300px;">
+<h5>The Woman</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all4.jpg" alt="Card image cap" style="width:100%;height:300px;">
+<h5>Holi</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<br>
+<<div class="container">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="all6.jpg" alt="Card image cap" style="width:100%;height:300px;">
+        <h5>Teen</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all2.jpg" alt="Card image cap" style="width:100%;height:300px;">
+          <h5>Beard Bored</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all1.jpg" alt="Card image cap" style="width:100%;height:300px;">
+<h5>The Woman</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-block">
+          <img class="card-img-top" src="all5.jpg" alt="Card image cap" style="width:100%;height:300px;">
+<h5>Holi</h5>
+        <a href="#" class="btn btn-primary">More Info!</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
+</html>
