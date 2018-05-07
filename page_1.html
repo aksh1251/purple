@@ -89,7 +89,7 @@
 </head>
 
 
-<body background="purple.jpg" >
+ <body ng-app="myApp" background="purple.jpg" >
 
   <nav class="navbar navbar-toggleable-md navbar-inverse"style="background-color:	#80266E" >
     <font color="white"><h1><font face="Comic Sans MS">Purple</font></h1></font>
@@ -216,7 +216,7 @@
     <div class="card-body">
       <h5 class="card-title">Lost Art</h5>
       <p>Lost Art is a modern art that depicts the mystery of life.</p>
-      <button type="button" class="btn btn-primary" >Buy Now!</button>
+      <button type="button" class="btn btn-primary" >Buy Now !</button>
     </div>
   </div>
 
@@ -225,7 +225,7 @@
     <div class="card-body">
       <h5 class="card-title">Guess Me</h5>
       <p>Guess Me is a modern art that depicts the mystery of life.</p>
-      <button type="button" class="btn btn-primary" >Buy Now!</button>
+      <button type="button" class="btn btn-primary" >Buy Now !</button>
     </div>
   </div>
 
@@ -234,14 +234,14 @@
     <div class="card-body">
       <h5 class="card-title">Illusions</h5>
       <p>Illusions is a modern art that depicts the mystery of life.</p>
-      <button type="button" class="btn btn-primary" >Buy Now!</button>
+      <button type="button" class="btn btn-primary" >Buy Now !</button>
     </div>
   </div>
 </div>
 </div>
 
 <br>
-
+<br>
 
 <div class="container">
   <font color="white">
@@ -249,96 +249,47 @@
 </div>
 
 
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-        <img class="card-img-top" src="all1.jpg" alt="Card image cap" style="width:100%;height:300px;">
-        <h5>Teen</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all2.jpg" alt="Card image cap" style="width:100%;height:300px;">
-          <h5>Beard Bored</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all3.jpg" alt="Card image cap" style="width:100%;height:300px;">
-<h5>The Woman</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all4.jpg" alt="Card image cap" style="width:100%;height:300px;">
-<h5>Holi</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
+  <div ng-controller="PaintingController">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search Title" ng-model="searchtitle">
     </div>
+  
+    <div class="row">
+  
+      <div class="col m-4" ng-repeat="painting in paintings | filter: searchtitle">
+        <div class="card">
+          <div class="card-block">
+            <img class="card-img-top" src="{{ painting.url }}" alt="Card image cap" style="width:100%;height:300px;">
+            <h5>{{ painting.title }}</h5>
+  
+            <a href="#" class="btn btn-primary">More Info !</a>
+            <br>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
   </div>
-
 </div>
 </div>
-
 <br>
-<<div class="container">
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-        <img class="card-img-top" src="all6.jpg" alt="Card image cap" style="width:100%;height:300px;">
-        <h5>Teen</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all2.jpg" alt="Card image cap" style="width:100%;height:300px;">
-          <h5>Beard Bored</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all1.jpg" alt="Card image cap" style="width:100%;height:300px;">
-<h5>The Woman</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-block">
-          <img class="card-img-top" src="all5.jpg" alt="Card image cap" style="width:100%;height:300px;">
-<h5>Holi</h5>
-        <a href="#" class="btn btn-primary">More Info!</a>
-      </div>
-    </div>
+
+
+<div class="jumbotron " style="background-color:#80266E">
+  <div class="container">
+    <font color="white"><h11 class="lead">&copy Purple.All Rights Reserved.</h11></font>
+    <a id="back2Top" title="Back to top" href="#">&#9650;</a>
   </div>
-
 </div>
-</div>
-</div>
-
 
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="myapp.js"></script>
+
 </html>
